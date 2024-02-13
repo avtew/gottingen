@@ -6,9 +6,9 @@ export default function CabinetLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className='grid grid-cols-[240px_minmax(900px,_1fr)] p-2 h-[calc(100vh-48px)]'>
+    <div className='grid grid-cols-[240px_minmax(900px,_1fr)] p-4 h-[calc(100vh-48px)]'>
       <Aside />
-      <main>
+      <main className="pl-4">
         {children}
       </main>
     </div>

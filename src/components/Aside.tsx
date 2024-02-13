@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link'
-// import Avatar from './Avatar';
 
 type LinkPropsType = {
   key: string
@@ -20,7 +19,7 @@ function NavLink(props: LinkPropsType) {
 
 export default function Aside() {
   return (
-    <nav className='flex flex-col gap-2 p-4 pr-5 border-r'>
+    <nav className='flex flex-col gap-1 px-4 pr-5 border-r'>
       {links.map(link => <NavLink key={link.id} title={link.title} href={link.href} />)}
     </nav>
   )
