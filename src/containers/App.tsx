@@ -6,8 +6,8 @@ import { Header } from '@/components/Header';
 import { addUser } from '../app/lib/actions';
 
 export function App() {
-  const [isAuth, setAuth] = useState(false);
   const { status, data: session } = useSession();
+  const [isAuth, setAuth] = useState(false);
   if (!isAuth) {
     if (status === 'authenticated') {
       setAuth(true);

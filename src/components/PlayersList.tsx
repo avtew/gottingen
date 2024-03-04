@@ -15,7 +15,7 @@ type PlayersListPropsType = {
 
 function Player(props: PlayerPropsType) {
   return (
-    <div className="flex justify-between w-full p-2 text-sm border-b hover:bg-gray-100 cursor-pointer">
+    <div className="flex justify-between w-full p-2 text-sm border-b border-slate-100 hover:bg-yellow-50 cursor-pointer">
       <span className="w-full">{props.fideid}</span>
       <span className="w-full">{props.name}</span>
       <span className="w-full">{props.surname}</span>
